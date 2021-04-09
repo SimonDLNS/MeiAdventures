@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Simon Dialinas - GR5 / "Mei-ling Zhou - an Overwatch scientific blog - Friends & Nemesis page"</title>
+		<meta name="Mei-ling Zhou p2" content="Blog about the Overwatch scientific Mei-Ling Zhou">
+		<meta name="Simon Dialinas" content="Simon Dialinas">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<div id="header">
+	     	<div class="logo">
+	     	<p id=drmei >Dr Mei-Ling Zhou</p>
+	      	</div>  
+      		<nav>
+        <ul>
+          <li>
+            <a href="index.html">Who am I?</a>
+          </li>
+          <li>
+            <a href="index.html">Project Report</a>
+            <ul class="mega-dropdown">
+              <li class="row">
+                <ul class="mega-col">
+                  <li><a href="#earlyresearch">Early Research</a></li>
+                  <li><a href="#newjourneys">New Journeys</a></li>
+                </ul>
+                <ul class="mega-col">
+                  <li><a href="#ecopoint">Ecopoint: Antarctica</a></li>
+                  <li><a href="#theartics">The Arctic</a></li>
+                </ul>
+                <ul class="mega-col">
+                  <li><a href="#riseandshine">Rise and Shine</a></li>
+                  <li><a href="#moreadventures">More Adventures</a></li>
+                </ul>
+              </li>
+            </ul>        
+          </li>
+          <li class="dropdown">
+            <a href="friendsandnemesis.html">Friends and Nemesis</a>
+              <ul>
+                <li><a href="friendsandnemesis.html#mercy">Dr. Angela Ziegler</a></li>
+                <li><a href="friendsandnemesis.html#winston">Dr. Winston</a></li>
+                <li><a href="friendsandnemesis.html#reinhardt">Reinhardt</a></li>
+                <li><a href="friendsandnemesis.html#blackwatch">Blackwatch</a></li>
+              </ul>        
+          </li>
+          <li>
+            <a href="contacts.html">Contact</a>
+          </li>
+          <li>
+            <a href="snowballgame.html">Snowball Game</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+			<section>
+				<h2>Say hello to my friends</h2>
+					<h3 id=mercy>Dr. Angela Ziegler - also called Mercy</h3>
+						<img class="friends" src="images/mercy.png" alt="Mercy" title="Mercy">
+						<p>
+							A guardian angel to those who come under her care, Dr. Angela Ziegler is a peerless healer, a brilliant scientist, and a staunch advocate for peace. She is one of the most gifted doctors in the world when it comes to medical technology, and has applied such technology to her own body; effects have possibly included slowing/halting her ageing process. She likes Swiss chocolate and enjoys tea, which she sometimes takes with a nip of brandy after a life-threatening ordeal. She isn't good at making coffee however—Genji was the only Overwatch member who could stand to drink it.
+						</p>
+					<h3 id=winston>Dr Winston</h3>
+						<img class="friends" src="images/winston.png" alt="My dear Winston" title="My dear Winston">
+						<p>
+							A super-intelligent, genetically engineered gorilla, Winston is a brilliant scientist and a champion for humanity's potential. Since a young age, he has shown limitless curiosity for the world around him, but also has a fondness for stories, especially those passed down from generation to generation. By his own admission, he tends to overthink things, is a perfectionist, and tends to ramble. As an ape among humans, he gets regular remarks on this subject, including references to old video games.
+
+							When Winston loses his temper, Winston becomes a raging ape. In his off-time, he enjoys peanut butter and bananas. He has stated/joked that his love of the former is due to his genetic therapy. Due to the amount of time he spent on the moon, he has to take supplements to keep his bones in good condition.
+						</p>
+					<h3 id=reinhardt>Reinhardt</h3>
+						<img class="friends" src="images/reinhardt.png" alt="The fearless Reinhardt" title="The fearless Reinhardt">
+						<p>
+							Reinhardt Wilhelm styles himself as a champion of a bygone age, who lives by the knightly codes of valor, justice, and courage. Possessing an "active imagination," he enjoys eating currywurst, is talkative, and is a fan of David Hasselhoff's music. He spars with Brigitte every day, after which they go to a pub or tavern to relax.
+						</p>
+				<h2>Those guys are the worse and must be stopped</h2>
+					<h3 id=blackwatch>Blackwatch</h3>
+						<img id="nemesis" src="images/blackwatch.jpg" alt="Blackwatch" title="Blackwatch">
+						<p>
+							Blackwatch's existence was kept a secret from the public, but there were always rumors of Overwatch carrying out black ops missions.
+							<br>
+							Commander Gabriel Reyes, Jesse McCree, Moira O'Deorain and Genji Shimada are the ones composing that team of high-trained killers.
+						</p>
+			</section>
+			<footer>
+				<p> © 2020- maquette Simon Dialinas</p>
+			</footer>
+		<style>
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			  font-size: 20px;
+			}
+
+			#myBtn {
+			  display: none;
+			  position: fixed;
+			  bottom: 20px;
+			  right: 30px;
+			  z-index: 99;
+			  font-size: 18px;
+			  border: none;
+			  outline: none;
+			  background-color: pink;
+			  color: white;
+			  cursor: pointer;
+			  padding: 15px;
+			  border-radius: 4px;
+			}
+
+			#myBtn:hover {
+			  background-color: #555;
+			}
+		</style>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/snowball.png" alt=SnowballScrollUpButton/></button>
+
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } 
+			  else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="./script.js"></script>
+
+	</body>
+</html>

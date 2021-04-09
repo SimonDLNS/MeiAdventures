@@ -1,0 +1,38 @@
+#pond {
+	display: flex;
+	
+	flex-direction: row;
+	flex-direction: row-reverse;
+	flex-direction: column;
+	flex-direction: column-reverse;
+
+	justify-content: flex-start;
+	justify-content: flex-end;
+	justify-content: space-between;
+	justify-content: space-around;
+	justify-content: center;
+
+	align-items: flex-start;
+	align-items: flex-end;
+	align-items: center;
+
+	align-self: flex-start; /*comme align-items mais pour un seul élément ou classe d'un ensemble*/
+	align-self: flex-end;
+	align-self: center;
+
+	order: X; /* -1 met automatiquement en 1er quelque soit l'ordre des autres */
+
+	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
+	flex-wrap: nowrap;
+
+	flex-flow: (flex-direction command+ flex-wrap command) /* valeurs vues dans flex-direction et flex-wrap, séparées par un espace*/
+
+/* 		gère l'espace entre les lignes alors que align-items gère comment les éléments dans leur ensemble sont alignés à l'intérieur du conteneur. 
+		!!Quand il n'y a qu'une seule ligne : align-content n'a aucun effet!! */
+	align-content: flex-start; 
+	align-content: flex-end;
+	align-content: space-between;
+	align-content: space-around;
+	align-content: stretch;
+}
